@@ -1,0 +1,98 @@
+<!-- index.html template -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/admin-dashboard.css">
+  <!-- research more about location in html for external scripts + async/defer? -->
+  <!-- defer loads script but prevents from running until html is parsed -->
+  <script src="../js/headerDropDown.js" defer></script>
+  <script src="../js/javascript.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="z-index-2">
+    <div id="logo-flex-container">
+        <a href="../index.html" id="header-logo">FR33FA11</a>
+    </div>
+    <div class="header-links">
+      <a href="../html/example.html" id="link-1">Example</a>
+      <a href="../html/admin-dashboard.html" id="link-2">Admin Dashboard</a>
+      <a href="" id="link-3">Sign Up</a>
+      <a href="" id="link-4">Login</a>
+    </div>
+
+    <img src="../img/burger-2.svg" alt="Menu Icon" id="burger-menu">
+    <button id="burger-menu-btn"></button>
+    
+    <div id="header-dropdown-content">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">About</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+  </header>
+  
+
+  <!-- links -->
+  <!-- target blank opens in new tab - rel prevents new website from knowing where the referral came from -->
+  <!-- <a href="https://xyz.com" target="_blank" rel="noopener noreferrer">Write text here</a> -->
+
+
+  <div class="view">
+    <div id="grid-container-1">
+      <div id="left-sidebar">
+        <h2>Dashboard</h2>
+        <div class="sidebar-element">
+          <img src="../img/home.svg" alt="Home icon" class="sidebar-svg">
+          <a href="../index.html">Home</a>
+        </div>
+        <div class="sidebar-element">
+          <img src="../img/profile.svg" alt="Profile icon" class="sidebar-svg">
+          <a href="#">Profile</a>
+          <p></p>
+        </div>
+        <div class="sidebar-element">
+          <img src="../img/message.svg" alt="Messages icon" class="sidebar-svg">
+          <a href="#">Messages</a>
+        </div>
+        <div class="sidebar-element">
+          <img src="../img/history.svg" alt="History icon" class="sidebar-svg">
+          <a href="#">History</a>
+        </div>
+        <div class="sidebar-element">
+          <img src="../img/tasks.svg" alt="Tasks icon" class="sidebar-svg">
+          <a href="#">Tasks</a>
+        </div>
+        <div class="sidebar-element">
+          <img src="../img/community.svg" alt="Communities icon" class="sidebar-svg">
+          <a href="#">Communities</a>
+        </div>
+      </div>
+      <div id="top-container"></div>
+      <div id="main-container"></div>
+    </div>
+    <!-- <div class="test-div"></div> -->
+
+    
+  </div>
+
+  <footer class="z-index-2">
+    <p>©deKoder 2024</p>
+  </footer>
+  
+</body>
+
+</html>
+
+<!-- Commit 1
+ Setup main grid, populate and style admin sidebar
+ - initialise website template
+ - setup top layer grid
+ - html and css for admin sidebar
+  -->
