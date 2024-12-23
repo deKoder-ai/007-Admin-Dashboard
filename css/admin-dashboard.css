@@ -192,7 +192,7 @@ button:hover {
     font-size: 1.6rem;
     width: 100%;
     height: 100%;
-    padding: 0px 20px;
+    padding-right: 45px;
 }
 #alerts-container > p {
     margin-right: 20px;
@@ -332,7 +332,9 @@ button:hover {
     outline: 1px solid rgba(0, 0, 0, 0.166);
     border-radius: 20px;
 }
-
+#share-icon {
+    transform: rotate(-90deg);
+}
 #project-1 {
     grid-column: 1 / 1;
     grid-row: 2 / 3;

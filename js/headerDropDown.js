@@ -3,34 +3,28 @@ const DropdownMenu = {
     dropdownBtn: document.getElementById('burger-menu-btn'),
     dropdownContent: document.getElementById('header-dropdown-content'),
     toggle: false,
-    btnClicked: function() {
-        console.log(`${this.dropdownButton} clicked`);
-        return `${this.dropdownButton} clicked`;
+    openMenu: function() {
+        this.dropdownContent.style.display = 'block';
+        this.toggle = true;
     },
-    toggleMenu: function() {
-        if (this.toggle === false) {
-            this.dropdownContent.style.display = 'block';
-            this.toggle = true;
-        } else {
-            this.dropdownContent.style.display = 'none';
-            this.toggle = false;
-        }
-        return this.toggle;
+    closeMenu: function() {
+        this.dropdownContent.style.display = 'none';
+        this.toggle = false;
     }
 }
 
-DropdownMenu.body.addEventListener('click', (event) => {
-    let target = event.target;
+DropdownMenu.body.addEventListener('click', (e) => {
+    let target = e.target;
     switch(target.id) {
-        // add new task to the break task list
         case 'burger-menu-btn':
-            DropdownMenu.toggleMenu();
-            break;
-        case '':
-            if (DropdownMenu.toggle === true) {
-                DropdownMenu.toggleMenu();
+            if (DropdownMenu.toggle === false) {
+                DropdownMenu.openMenu();
+            } else {
+                DropdownMenu.closeMenu();
             }
             break;
-    }
+        default:
+            DropdownMenu.closeMenu();
+    } 
 });
 
