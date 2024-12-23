@@ -99,9 +99,11 @@
               <input type="text" name="search-input" id="search-input">
             </div>
             <div id="alerts-container">
-              <img src="../img/notification.svg" alt="Notification icon" class="top-container-svg">
-              <img src="../img/cat-profile.png" alt="Profile picture" type="png" id="cat-profile-top">
-              <p>Jimmy Threadbare</p>
+              <a href="#"><img src="../img/notification.svg" alt="Notification icon" 
+                class="top-container-svg"></a>
+              <a href="#"><img src="../img/cat-profile.png" alt="Profile picture" 
+                type="png" id="cat-profile-top"></a>
+              <a href="#"><p>Jimmy Threadbare</p></a>
             </div>
           </div>
           <div class="top-child">
@@ -121,17 +123,18 @@
         </div>
       </div>
 
-
-      
       <div id="main-container">
-        <div id="main-title-1" class="main-title"><h3>Your Projects</h3></div>
-        <div id="main-title-2" class="main-title"><h3>Announcements</h3></div>
-
+        <div id="main-title-1" class="main-title">
+          <h3><a href="#">Your Projects</a></h3>
+        </div>
+        <div id="main-title-2" class="main-title">
+          <h3><a href="#">Announcements</a></h3>
+        </div>
         <div id="project-1" class="project">
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Super Cool Project</a></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab odit
                  nihil labore pariatur, sint placeat laboriosam commodi</p>
             </div>
@@ -146,7 +149,7 @@
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Less Cool Project</a></h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque 
                 excepturi exercitationem molestias earum molestiae labore eum 
                 cupiditate?</p>
@@ -162,7 +165,7 @@
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Impossible App</a></h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Voluptate accusantium modi cum nostrum fugiat, ad laudantium 
                 unde!</p>
@@ -178,7 +181,7 @@
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Easy App</a></h3>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Tenetur consequatur necessitatibus amet itaque magni quaerat, 
                 unde consectetur.</p>
@@ -194,7 +197,7 @@
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Ad Blocker</a></h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Similique ratione quidem perspiciatis explicabo corrupti 
                 dignissimos officia aliquam.</p>
@@ -210,7 +213,7 @@
           <div class="project-side"></div>
           <div class="project-content">
             <div class="project-text">
-              <h3>Super Cool Project</h3>
+              <h3><a href="#">Money Maker</a></h3>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Velit quos sequi omnis facilis consequuntur voluptates, quasi 
                 minus.</p>
@@ -223,13 +226,66 @@
           </div>
         </div>
 
+        <div id="main-sidebar">
+          <div id="main-sidebar-1">
+            <div id="announcements">
+              <div class="announcement">
+                <h4>Site Maintenance</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex 
+                  repellendus itaque possimus accusantium non magnam</p>
+              </div>
+              <div class="announcement">
+                <h4>Community Share Day</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim quasi expedita.</p>
+
+              </div>
+              <div class="announcement">
+                <h4>Updated Privacy Policy</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deleniti aspernatur porro.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div id="main-sidebar-2">
+            <h3><a href="#">Trending</a></h3>
+          </div>
+
+          <div id="main-sidebar-3">
+            <div class="trend">
+              <img src="../img/anime-profile.png" alt="Profile picture" class="trending-profile-pic">
+              <div>
+                <p>@stef</p>
+                <p>World Peace Builder</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img src="../img/cat-profile.png" alt="Profile picture" class="trending-profile-pic">
+              <div>
+                <p>@fr33fa11</p>
+                <p>Chaos Creator</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img src="../img/profile-4.png" alt="Profile picture" class="trending-profile-pic">
+              <div>
+                <p>@zadelicious</p>
+                <p>Life Changing App</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img src="../img/girl-profile.png" alt="Profile picture" class="trending-profile-pic">
+              <div>
+                <p>@alexa</p>
+                <p>No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
     </div>
-
-
-
-    
   </div>
 
   <footer class="z-index-2">
@@ -261,11 +317,21 @@ Write HTML and CSS for top container
  - Download profile pictures
  - Replace notification icon to outline version
 
- Commit 4
+ Commit 4 \\
 
   - Create main titles
   - Create projects grid
   - Style main content titles
   - Add and style project contents
+
+Commit 5
+
+ - Create grid for announcements sidebar
+ - Create and style announcements section
+ - Add title for Trending
+ - Adjust View height to match project
+ - Create and style Trending section
+ - Add anchor tags to headings and icons
+ - Add hover effect to project icons and top buttons
 
  -->
